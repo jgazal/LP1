@@ -1,0 +1,45 @@
+Qual a diferença entre:
+O comando PARA e o comando ENQUANTO:
+
+A diferença é que na estrutura de repetição ENQUANTO é difícil determinar o número de vezes que o bloco será executado. Ele será executado enquanto uma condição for satisfeita.
+
+ 
+
+O comando PARA repete a execução do bloco um número determinado de vezes, pois não prevê uma condição e possui limites fixos.
+
+É um laço com contador que sempre tem uma inicialização (vi) da variável de controle (V), um teste para verificar se a variável atingiu o limite (vf) e um acréscimo (incremento de p) na variável de controle após cada execução do bloco de repetição.                 
+
+Exemplo de estrutura:                                                                                                                                                                                 
+
+para V de vi até vf passo p faça
+
+   C1;
+
+   C2;
+
+   Cn;
+
+fimpara;
+
+Onde:
+
+    V é a variável de controle;
+    vi é o valor inicial da variável V;
+    vf é o valor final da variável V, ou seja, o valor até o qual ela vai chegar;
+    p é o valor do incremento da variável V.
+
+ 
+
+O comando ENQUANTO realiza repetição com teste no início. Um bloco ou uma ação primitiva  será repetida enquanto uma determinada <condição> for verdadeira. Quando o resultado de <condição> for falso, os comandos não são executados nenhuma vez.
+
+Exemplo de estrutura:
+
+enquanto <condição> faça
+
+   C1;
+
+   C2;
+
+   Cn; 
+
+fimenquanto;

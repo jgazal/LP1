@@ -1,0 +1,22 @@
+Construa um algoritmo que verifique se um número fornecido pelo usuário é primo ou não.
+
+início
+
+inteiro: N, Cont, ContDiv;
+
+    Cont <- 1;
+    ContDiv <- 0;
+    escreva("Digite um número: ");
+    leia(N);
+    repita
+        se(N mod Cont = 0) então
+            ContDiv <- ContDiv + 1;
+        fimse;
+        Cont <- Cont + 1;
+    Até(Cont > N);
+    se(ContDiv > 2) então
+        escreva("O número ", N, " não é primo");
+    senão
+        escreva("O número ", N, " é primo");
+    fimse;
+fim.

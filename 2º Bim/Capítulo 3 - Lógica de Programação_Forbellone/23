@@ -1,0 +1,19 @@
+23 Elabore um algoritmo que imprima todos os números primos existentes entre N1 e N2, em que N1 e N2 são números naturais fornecidos pelo usuário.
+
+inicio
+    inteiro: N1, N2, A, B;
+    logico: NPrimo;
+    leia(N1, N2);
+      escreva ("Números Primos:");
+      para a de N1 até N2 passo 1 faça
+         NPrimo <- verdadeiro;
+      para B de 2 até (A-1) passo 1 faça
+         se (A mod B = 0) então
+            NPrimo <- falso;
+         fimse;
+      fimpara;
+      se (NPrimo = verdadeiro) então
+         escreva(A);
+      fimse;
+      fimpara;
+fim.

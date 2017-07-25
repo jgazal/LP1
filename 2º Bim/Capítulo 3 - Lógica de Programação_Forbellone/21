@@ -1,0 +1,57 @@
+21 Em uma eleição presidencial existem quatro candidatos. Os votos são informados por código. Os dados utilizados para a escrutinagem obedecem à seguinte codificação:
+1, 2 ,3, 4 = voto para os respectivos candidatos;
+5 = voto nulo;
+6 = voto em branco.
+Elabore e escreva um algoritmo que calcule e escreva:
+o total de votos para cada candidato e seu percentual sobre o total;
+o total de votos nulos e seu percentual sobre o total;
+o total de votos em branco e seu percentual sobre o total.
+Como finalizador do conjunto de votos, tem-se o valor 0.
+
+inicio
+    inteiro: C1, C2, C3, C4, branco, nulo, n, cod, total, cont;
+    real: percentual;
+    enquanto (n<>0) faça
+         escreva("Código do candidato: 1,2,3,4 ");
+         escreva("5 - branco 6 - nulo ");
+         escreva("0 - Encerra a votação");
+         leia(cod);
+         se(cod=0) então
+            escreva("Eleicao finalizada");
+            n<-0;
+         senão
+            escolha cod
+               caso 1
+                  C1<-C1+1;
+                  total<-total+1;
+               caso 2
+                  C2<-C2+1;
+                  total<-total+1;
+               caso 3
+                  C3<-C3+1;
+                  total<-total+1;
+               caso 4
+                  C4<-C4+1;
+                  total<-total+1;
+               caso 5
+                  branco<-branco+1;
+                  total<-total+1;
+               caso 6
+                  nulo<-nulo+1;
+               outrocaso escreva("Opção inválida");
+            fimescolha;
+         fimse;
+      fimenquanto;
+      percentual<-(C1*100)/total;
+      escreva("O candidato 1 teve ",C1,"votos ",percentual,"% dos votos");
+      percentual<-(C2*100)/total;
+      escreval("O candidato 2 teve ",C2,"votos ",percentual,"% dos votos");
+      percentual<-(C3*100)/total;
+      escreval("O candidato 3 teve ",C3,"votos ",percentual,"% dos votos");
+      percentual<-(C4*100)/total;
+      escreval("O candidato 4 teve ",C4,"votos ",percentual,"% dos votos");
+      percentual<-(branco*100)/total;
+      escreval("Votos em branco teve ",branco,"votos ",percentual,"% dos votos");
+      percentual<-(nulo*100)/total;
+      escreval("Votos nulo teve ",nulo,"votos ",percentual,"% dos votos");
+fim.

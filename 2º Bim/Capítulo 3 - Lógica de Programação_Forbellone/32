@@ -1,0 +1,15 @@
+32 Anacleto tem 1,50 metros e cresce 2 centímetros por ano, enquanto Felisberto tem 1,10 metro e cresce 3 centímetros por ano. Construa um algoritmo que calcule e imprima quantos anos serão necessários para que Felisberto seja maior que Anacleto.
+
+inicio
+    real: Anacleto, Felisberto;
+    inteiro: Anos;
+    Anacleto <- 1.5;
+    Felisberto <- 1.10;
+    Anos <- 0;
+    repita
+       Anacleto <- Anacleto+0.02;
+       Felisberto <- Felisberto+0.03;
+       Anos <- Anos+1;
+    até (Anacleto < Felisberto);
+    escreva("Anos: ", Anos);    
+fim.

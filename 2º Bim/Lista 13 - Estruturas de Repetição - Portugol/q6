@@ -1,0 +1,26 @@
+Escreva um algoritmo que leia um conjunto de 20 números inteiros e mostre qual foi o maior e o menor valor fornecido.
+
+
+início
+
+   inteiro: cont, N, maior, menor;
+
+    cont <- 1;
+    enquanto (cont <= 20) faça
+        escreva("Digite o ",cont,"º valor: ");
+        leia (N);
+        se(N > maior) então
+            maior <- N;
+        fimse;
+        se(cont = 1) então
+            menor <- N;
+        senão
+            se(N < menor) então
+                menor <- N;
+            fimse;
+        fimse;
+        cont <- cont + 1;
+    fimenquanto;
+    Escreva("Maior valor digitado : ", maior);
+    Escreva("Menor valor digitado : ", menor);
+fim.

@@ -1,0 +1,12 @@
+15 Faça um algoritmo que seja capaz de obter o quociente inteiro da divisão de dois números fornecidos, sem utilizar a operação de divisão(/) e nem divisão inteira(div).
+
+inicio
+    inteiro: N1,N2,cont,result;
+    leia(N1, N2);
+    result<-0;
+    para cont de N2 até N1 passo N2 faça
+        cont<-N2-N2;
+        result<-result+1;
+    fimpara;
+    escreva(N1," / ",N2," = ", result);
+fim.      

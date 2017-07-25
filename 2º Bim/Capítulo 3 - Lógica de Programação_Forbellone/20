@@ -1,0 +1,15 @@
+20 Uma rainha requisitou os serviços de um monge e disse-lhe que pagaria qualquer preço. O moge, necessitando de alimentos, perguntou à rainha se o pagamento poderia ser feito com grãos de trigo dispostos em um tabuleiro de xadrez, de tal forma que o primeiro quadro contivesse apenas um grão e os quadros subsequentes, o dobro do quadro anterior. A rainha considerou o pagamento barato e pediu que o serviço fosse executado, sem se dar conta de que seria impossível efetuar o pagamento. Faça um algoritmo para calcular o número de grãos que o monge espera receber.
+
+inicio
+    inteiro: i;
+    real: cont;
+    cont<-1;
+     i<-1;
+     escreva("Quadro 1: ",cont);
+     para cont de 2 até 64 passo 1 faça
+        i<-i+i
+        escreva("Quadro ",cont,":",i)
+        cont<-cont+1
+    fimpara
+    escreva("Total: ",i)    
+fim.

@@ -1,0 +1,27 @@
+3.7 Escreva um algoritmo que leia um conjunto de 20 números inteiros e mostre qual foi o maior e o menor valor fornecido.
+
+inicio
+    inteiro: N, MENOR, MAIOR, CON;
+    para CON de 1 até 20 passo 1 faça
+        leia(N);
+        se(CON=1);
+            então
+                inicio
+                    MAIOR <- N;
+                    MENIOR <- N;
+                fim;
+        fimse;
+        se(N>MAIOR)
+            então
+                MAIOR <- N;
+            senão
+                se(N<MENOR)
+                    então
+                        MENOR <- N;
+                fimse;
+        fimse;
+    fimpara;
+    escreva("O maior número é = ",MAIOR);
+    escreva("O menor número é = ",MENOR);
+fim.
+

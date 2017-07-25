@@ -1,0 +1,23 @@
+27 Escreva um algoritmo que calcule e escreva a soma dos dez primeiros termos da seguinte série:
+2/500 - 5/450 + 2/400 - 5/350 +...
+
+
+inicio
+    inteiro: denominador, i;
+    real: s;
+    denominador <- 500;
+    s <- 0;
+    para i de 1 até 10 faça
+        se((i mod 2)<> 0) entao
+            s <- s+(2/denominador);
+            escreva(s);
+        senão
+            s <- s-(5/denominador);
+            escreva(s);
+            denominador <- denominador - 50;
+        fimse;
+        i<-i+1;
+    fimpara;
+
+
+fim.

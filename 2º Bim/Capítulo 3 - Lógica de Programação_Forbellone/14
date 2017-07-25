@@ -1,0 +1,19 @@
+14 Elabore um algoritmo que obtenha o máximo divisor comum (MDC) entre dois números fornecidos.
+
+inicio
+    int N1, N2, MAIOR, MENOR, AUX;
+    leia(N1, N2);
+    se(N1>N2) então
+        MAIOR <- N1;
+        MENOR <- N2;
+    senão
+        MAIOR <- N2;
+        MENOR <- N1;
+    fimse;
+    enquanto (MAIOR mod MENOR <> 0) faça
+        AUX <- MENOR;
+        MENOR <- MAIOR mod MENOR;
+        MAIOR <- AUX;
+    fimenquanto;
+    escreva("O MDC entre ", N1, " e ", N2, " é: ", MENOR);
+fim.

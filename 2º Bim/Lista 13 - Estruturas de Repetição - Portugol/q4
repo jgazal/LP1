@@ -1,0 +1,24 @@
+Elabore um algoritmo que calcule N! (fatorial de N), sendo que o valor inteiro de N é fornecido pelo usuário.
+
+Sabendo que:
+
+      N! = 1 x 2 x 3 x ... x (N-1) x N;
+      0! = 1, por definição
+-------------------------------------------------------------------------------
+início
+
+    inteiro: N, F, C;
+
+    escreva("Digite um número: ");
+    leia(N);
+    C <- N;
+    F <- 1;
+    repita
+        F <- F * C;
+        C <- C - 1;
+    até(C < 1);
+    se(N = 0) então
+         F <- 1;
+    fimse;
+    escreva("Fatorial de ", N, " = ", F);
+fim.

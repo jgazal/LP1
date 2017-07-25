@@ -1,0 +1,9 @@
+O que faz o código seguinte:
+
+for (i = 1; i <= 200; i++) ;
+    printf("%i\n",i);
+----------------------------------------------------------------------
+
+Mostra na tela o valor 201.
+
+A cada interação, das 200 que irá realizar, executa uma instrução vazia, pois foi colocado incorretamente um ; (ponto-e-vírgula) após o for.Após a execução das instruções irá mostrar na tela o valor 201.

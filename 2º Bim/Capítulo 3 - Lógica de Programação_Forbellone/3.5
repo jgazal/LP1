@@ -1,0 +1,19 @@
+3.5 Elabore um algoritmo que calcule N! (fatorial de N), sendo que o valor inteiro de N é fornecido pelo usuário.
+Sabendo que
+   N! = 1x2x3x...x(N-1)xN;
+   0! = 1, por definição.
+
+inicio
+    inteiro: N, F, V;
+    leia(N);
+    se(N=0)
+        então escreva("Fatorial de ", N, " = 1");
+        senão inicio
+                F <- 1;
+                para V de 1 até N passo 1 faça
+                    F <- F*V;
+                fimpara;
+                escreva("Fatorial de ", N, " = ", F);
+               fim;
+    fimse;
+fim.

@@ -1,0 +1,18 @@
+26 Elabore um algoritmo que determine o valor de S, em que:
+S = 1/1 - 2/4 + 3/9 - 4/16 + 5/25 - 6/36...-10/100.
+
+inicio
+    real: H, Dividendo, Divisor;
+    inteiro: cont;
+    Dividendo <- 1;
+    Divisor <- 1;
+    cont <- 1;
+    H <- 0;
+    para cont de 1 até 10 passo 1 faça
+       H <- Dividendo/Divisor;
+       Dividendo <- Dividendo+1;
+       Divisor <- Dividendo*Dividendo;
+       escreva("H = ",H);
+       cont <- cont+1;
+    fimpara;
+fim.

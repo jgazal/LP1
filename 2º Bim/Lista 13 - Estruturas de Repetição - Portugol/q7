@@ -1,0 +1,23 @@
+Elabore um algoritmo que obtenha o mínimo múltiplo comum (MMC) entre dois números fornecidos pelo usuário.
+
+início
+
+    inteiro: N1, N2, Maior, Menor, Aux;
+    real: MMC;
+
+    leia(N1,N2);
+    se(N1 > N2) então
+        Maior <- N1;
+        Menor <- N2;
+    senão
+        Maior <- N2;
+        Menor <- N1;
+    fimse;
+    enquanto (MAIOR mod MENOR <> 0) faça
+        Aux <- Menor;
+        Menor <- Maior mod Menor;
+        Maior <- Aux;
+    fimenquanto;
+    MMC <- (N1*N2)/Menor;
+    escreva("O MMC entre ", N1, " e ", N2, " é: ", MMC)
+fim.

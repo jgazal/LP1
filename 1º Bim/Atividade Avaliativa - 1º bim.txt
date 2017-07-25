@@ -1,0 +1,169 @@
+PROBLEMA 1 - Triplo do Maior
+============================
+
+inicio
+    
+    inteiro: valor1, valor2, R;
+
+    leia(valor1, valor2);
+
+    se((valor1 >= 0) e (valor1 <= 1000) e (valor2 >= 0) e (valor2 <= 1000) e (valor1 <> valor2))
+        então
+            se(valor1 > valor2) 
+                então
+                    inicio
+                        R <- valor1 * 3;
+                        escreva(R);
+                    fim;
+            senão
+                inicio
+                   R <- valor2 * 3;
+                   escreva(R);
+                fim;
+            fimse;
+    senão
+        escreva("Valor inválido");
+    fimse;
+fim.
+
+
+
+PROBLEMA 2 - Aviões de Papel
+============================
+
+inicio
+
+    inteiro: C, P, F;
+
+    leia(C, P, F);
+
+    se((C >= 1) e (C <= 1000) e (P >= 1) e (P <= 1000) e (F >= 1) e (F <= 1000))
+        então
+            se(C * F <= P)
+                então
+                    escreva("S");
+                senão
+                    escreva("N");
+            fimse;
+    senão
+        escreva("Valores inválidos");
+    fimse;
+fim.
+
+
+
+PROBLEMA 3 - Frota de taxi
+============================
+
+inicio
+    
+    real: A, G, Ra, Rg;
+
+    leia(A, G, Ra, Rg);
+
+    se((A >= 0.01) e (A >= 10.00) e (G >= 0.01) e (G <= 10.00) e (Ra >= 0.01) e (Ra <= 20.00) e (Rg >= 0.01) e (Rg >= 20.00))
+        então
+            se(A/Ra >= G/Rg)
+                então
+                    escreva("G");
+            senão
+                escreva("A");
+            fimse;
+    senão
+        escreva("Valores inválidos");
+    fimse;
+fim. 
+
+
+
+PROBLEMA 4 - Notas da prova
+============================
+
+inicio
+
+    inteiro: N;
+
+    leia(N);
+
+    escolha(N)
+        caso 86..100   : escreva("A");
+        caso 61..85    : escreva("B");
+        caso 36..60    : escreva("C");
+        caso 1..35     : escreva("D");
+        caso 0         : escreva("E");
+        caso contrário : escreva("Valor inválido");
+    fimescolha;
+fim.
+
+
+
+PROBLEMA 5 - Conta de água
+============================
+
+inicio
+
+    inteiro: N, R, tx;
+
+    tx <- 7;
+
+    leia(N);
+
+    escolha(N)
+        caso 0..10     : escreva(tx);
+        caso 11..30    : inicio
+                            R <- (N-10)*1 + tx;
+                            escreva(R);
+                         fim;
+        caso 31..100   : inicio
+                            R <- (N-30)*2 + 20 + tx;
+                            escreva(R);
+                         fim;
+        caso 101..1000 : inicio
+                            R <- (N-100)*5 + 140 + 20 + tx;
+                            escreva(R);
+                         fim;                 
+        caso contrário : escreva("Valor inválido");
+    fimescolha;
+fim.
+
+
+
+PROBLEMA 6 - Zerinho ou Um
+============================
+
+inicio
+
+    inteiro: A, B, C;
+
+    leia(A, B, C);
+
+    se((A >= 0) e (A <= 1) e (B >= 0) e (B <= 1) e (C >= 0) e (C <= 1))
+        então
+            se((A = B) e (B = C))
+                então
+                    escreva("*");
+            senão
+                se((A <> B) e (A <> C))
+                    então
+                        escreva("A");
+                senão
+                    se((B <> A) e (B <> C))
+                        então
+                            escreva("B");
+                    senão
+                        se((C <> A) e (C <> B))
+                            então
+                                escreva("C");
+                        fimse;
+                    fimse;
+                fimse;
+            fimse;
+    senão
+        escreva("Valores inválidos");
+    fimse;
+fim.
+
+
+
+
+

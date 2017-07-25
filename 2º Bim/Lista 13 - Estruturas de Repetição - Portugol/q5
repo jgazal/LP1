@@ -1,0 +1,18 @@
+A série de Fibonacci é formada pela seguinte sequência: 1, 1, 2, 3, 5, 8, 13,21, 34, 55,... etc. Escreva um algoritmo que gere a série de Fibonacci até o vigésimo termo.
+
+
+início
+
+   inteiro: C, T1, T2, T3;
+
+    T1 <- 0;
+    escreva(T1);
+    T2 <- 1;
+    escreva(T2);
+    para C de 1 até 20 passo 1 faça
+        T3 <- T1 + T2;
+        escreva(T3);
+        T1 <- T2;
+        T2 <- T3;
+    fimpara;
+fim.

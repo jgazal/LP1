@@ -1,0 +1,40 @@
+3.1 Dado o algorítmo a seguir, responda:
+
+inicio
+    inteiro: A, B, I, J;
+    leia(A);
+    repita
+        para I de 1 até A passo 1 faça
+            J <- I;
+            enquanto (J<=A) faça
+                escreva(J);
+                J <- J+I;
+            fimenquanto;
+        fimpara;
+        B <- A;
+        leia(A);
+    até((A=B) ou (A<=0));
+fim.
+
+a) O que será mostrado se forem fornecidos os números 4 e 0.
+b) O que será mostrado se forem fornecidos os números 3, 2 e 2.
+c) O que será mostrado se forem fornecidos os números 2, 1 e 0.
+d) O que será mostrado se forem fornecidos os números 1 e 0.
+
+
+a) 1 2 3 4
+   2 3 4
+   3 4
+   4
+
+b) 1 2 3
+   2 3
+   3
+   1 2
+   2
+
+c) 1 2
+   2
+   1
+
+d) 1

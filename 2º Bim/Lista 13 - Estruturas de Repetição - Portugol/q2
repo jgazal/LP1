@@ -1,0 +1,40 @@
+Qual a diferença entre:
+O comando ENQUANTO e o comando REPITA:
+
+No ENQUANTO o bloco será executado enquanto uma condição for satisfeita. A repetição é realizada com teste no início.
+
+No REPITA o bloco será executando até que uma condição seja satisfeita. A repetição é realizada com teste no final.
+
+ 
+
+O comando ENQUANTO realiza repetição com teste no início. Um bloco ou uma ação primitiva  será repetida enquanto uma determinada <condição> for verdadeira. Quando o resultado de <condição> for falso, os comandos não são executados nenhuma vez.
+
+Exemplo de estrutura:
+
+enquanto <condição> faça
+
+   C1;
+
+   C2;
+
+   Cn; 
+
+fimenquanto;
+
+ 
+
+O comando REPITA realiza a repetição com teste no final. Um bloco ou ação primitiva será repetido até que uma determinada condição seja verdadeira.
+
+Exemplo de estrutura:
+
+repita
+
+   C1;
+
+   C2;
+
+   Cn; 
+
+até  <condição>;
+
+O bloco (C1...Cn) é executado pelo menos uma vez, independentemente da validade da condição. A inspeção da condição é feita após a execução do bloco.

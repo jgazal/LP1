@@ -1,0 +1,26 @@
+Construa um algoritmo que, dado um conjunto de valores inteiros e positivos, determine qual o menor e o maior valor do conjunto. O final do conjunto de valores é conhecido pelo valor -1, que não deve ser considerado.
+
+
+início
+
+    inteiro: N, Num, cont, Maior, Menor;
+
+    Maior <- 0;
+    Menor <- 99999;
+    enquanto( N <> -1) faça
+        escreva("Número: ");
+        leia(Num);
+        se(Num = -1) então
+            N <- -1;
+        senão
+        se(Num > Maior) então
+            Maior <- Num;
+        fimse;
+        se(Num < Menor) então
+            Menor <- Num;
+        fimse;
+        fimse;
+    fimenquanto;
+    escreva("Maior: ",Maior);
+    escreva("Menor: ",Menor);
+fim.

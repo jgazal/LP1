@@ -1,0 +1,26 @@
+Faça um algoritmo que seja capaz de obter o resultado de uma exponenciação para qualquer base e expoente inteiros fornecidos, sem utilizar a operação de exponenciação (pot).
+
+
+início
+
+    inteiro: base, expoente, cont, result;
+
+    escreva("Digite a base : ");
+    leia(base);
+    escreva("Digite o expoente: ");
+    leia(expoente);
+    cont <- 2;
+    result <- base;
+    se(expoente = 1) então
+       result <- base;
+    fimse;
+    se(expoente = 0) então
+       result <- 1;
+    senão
+        para cont de 2 até expoente passo 1 faça
+            result <- result * base;
+            cont <- cont + 1;
+        fimpara;
+        escreva(base, " ^ ", expoente, " = ", result);
+    fimse;
+fim.

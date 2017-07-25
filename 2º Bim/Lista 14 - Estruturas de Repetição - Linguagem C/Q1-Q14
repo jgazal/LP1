@@ -1,0 +1,45 @@
+Indique quais afirmações são Falsas e quais são Verdadeiras:
+
+Q1: A condição dentro de um laço while e do...while tem que ser colocadas sempre dentro de parênteses.
+R: V
+
+Q2: Os lações for e while executam SEMPRE, pelo menos uma vez, o corpo do laço.
+R: F
+
+Q3: O laço do...while executa SEMPRE, pelo menos uma vez, o corpo do laço.
+R: V
+
+Q4: O laço do...while executa SEMPRE, pelo menos uma vez, o corpo do laço.
+R: V
+
+Q5: As três componentes, dentro dos parênteses, do laço for são todas obrigatórias.
+R: F
+
+Q6: As três componentes, dentro dos parênteses, do laço for são todas facultativas.
+R: V
+
+Q7: Quando em um laço for se tem que realizar mais do que uma carga inicial ou mais de um incremento, as diversas instruções, em cada uma das componentes, devem ser separadas por vírgula e não por ponto e vírgula, de forma a manter o formato do laço for.
+R: V
+
+Q8: No laço for,  o número de vezes que as cargas iniciais são executadas é sempre igual ao número de iterações do laço.
+R: F
+
+Q9: No laço for ou while, o número de vezes que a condição é testada é sempre igual ao número de iterações do laço.
+R: F
+
+Q10: Em todos os laços, a condição é sempre testada pelo menos uma vez.
+R: V
+
+Q11: Os laços while e do...while incrementam automaticamente a variável de controle.
+R: F
+
+Q12: Um break, quando presente dentro de um laço, termina o programa.
+R: F
+
+Q13: Qualquer dos laços pode ser sempre escrito a partir do laço while.
+R: V
+
+Q14: Se uma variável x se encontra isolada em uma instrução, ++x e x++ são equivalentes?
+R: F
+
+

@@ -1,0 +1,46 @@
+Construa um algoritmo que leia um conjunto de dados contendo altura e sexo ('M' para masculino e 'F' para feminino) de 50 pessoas e, depois, calcule e escreva:
+
+a maior e a menor altura do grupo;
+a média de altura das mulheres;
+o número de homens e a diferença percentual entre eles e as mulheres.
+-------------------------------------------------------------------------------
+
+início
+
+    real: Altura, Maior, Menor, MediaAltMulheres, DifPercentual;
+    caracter: sexo;
+    inteiro: cont, QtdMulheres, QtdHomens;
+
+    Maior <- 0;
+    Menor <- 99999;
+    QtdMulheres <- 0;
+    Qtdhomens <- 0;
+    para cont de 1 até 50 passo 1 faça
+        escreva("Altura: ");
+        leia(Altura);
+        escreva("Sexo (M/F): ");
+        leia(sexo);
+        se((sexo= "f") ou (sexo= "F")) então
+            MediaAltMulheres <- MediaAltMulheres + Altura;
+            QtdMulheres <- QtdMulheres + 1;
+        fimse;
+        se((sexo= "m") ou (sexo= "M")) então
+           QtdHomens <- QtdHomens + 1;
+        fimse;
+        se(Altura > Maior) então
+           Maior <- Altura;
+        fimse;
+        se(Altura < Menor) então
+           Menor <- Altura;
+        fimse;
+        cont <- cont + 1;
+    fimpara;
+    MediaAltMulheres <- MediaAltMulheres / QtdMulheres;
+    DifPercentual <- QtdHomens / QtdMulheres;
+    
+    escreva("Maior Altura: ", Maior);
+    escreva("Menor Altura: ", Menor);
+    escreva("Média da Altura das mulheres: ", MediaAltMulheres);
+    escreva("Número de Homens: ", Qtdhomens );
+    escreva("Diferença percentual entre Homens e Mulheres: ", DifPercentual);
+fim.

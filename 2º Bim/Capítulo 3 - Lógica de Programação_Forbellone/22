@@ -1,0 +1,14 @@
+22 Escreva um algoritmo que imprima todas as possibilidades de que no lançamento de dois dados tenhamos o valor 7 como resultado da soma dos valores de cada lado.
+
+inicio
+    inteiro: D1, D2;
+    para D1 de 1 até 6 passo 1 faça
+        para D2 de 1 até 6 passo 1 faça
+            se(D1+D2 = 7)
+                escreva("Dado 1 = ",D1," + Dado 2 = ", D2, " = 7");
+            fimse;
+        fimpara;
+    fimpara;
+fim.
+    
+    
